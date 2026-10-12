@@ -1,0 +1,2 @@
+# Copy to email-worker/.dev.vars for local `wrangler dev`. Never commit .dev.vars.
+INTAKE_SECRET = "the-same-long-random-string-as-the-web-project"

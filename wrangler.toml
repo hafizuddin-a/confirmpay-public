@@ -1,0 +1,18 @@
+# Standalone Worker bound to Cloudflare Email Routing on confirmpay.link.
+# Email Routing can only trigger a Worker (not a Pages Function), so this is
+# deployed separately from the Pages app.
+name = "confirmpay-email"
+main = "src/index.ts"
+compatibility_date = "2026-09-01"
+compatibility_flags = ["nodejs_compat"]
+
+[vars]
+INTAKE_URL = "https://confirmpay.link/api/intake"
+FORWARDING_CONFIRM_URL = "https://confirmpay.link/api/forwarding-confirm"
+
+# Secret — set with `wrangler secret put INTAKE_SECRET`:
+#   INTAKE_SECRET   must equal the same-named secret on the Pages project
+
+# Email Routing wiring (done via API/dashboard, not wrangler.toml):
+#   confirmpay.link zone -> Email Routing enabled -> catch-all rule "Send to a
+#   Worker: confirmpay-email". Inbound addresses are {inbound_token}@confirmpay.link.
