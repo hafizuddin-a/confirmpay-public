@@ -63,6 +63,10 @@ The website, the API, the database, sign-in and the dashboard are private. That 
 
 This repository is a copy of the Worker's folder in ConfirmPay's private repository, and it is updated whenever the Worker changes. You can read it, run it and test it. You cannot inspect the deployed build itself, so that the two match is the maintainer's word.
 
+## Licence
+
+MIT, see [LICENSE](LICENSE). That covers this repository only; the rest of ConfirmPay is not part of it.
+
 ## Questions
 
 Open an issue here for anything about the code. To ask about your data, or to have it deleted, use [confirmpay.link/delete-data](https://confirmpay.link/delete-data).
