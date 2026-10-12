@@ -1,6 +1,26 @@
-# ConfirmPay email reader
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/logo-dark.png">
+    <img src="assets/logo-light.png" alt="ConfirmPay logo" width="300">
+  </picture>
+</p>
 
-This is the code that reads the bank emails an organisation forwards to [ConfirmPay](https://confirmpay.link). It is the only part of ConfirmPay that ever holds the raw email, and it is small enough to read in one sitting: about 500 lines of TypeScript, no AI, no database.
+<h1 align="center">Email reader</h1>
+
+<p align="center">
+  The code that reads the bank emails an organisation forwards to ConfirmPay.
+</p>
+
+<p align="center">
+  <a href="https://confirmpay.link"><b>Website</b></a> ·
+  <a href="#what-it-does"><b>What it does</b></a> ·
+  <a href="#what-leaves-the-worker"><b>What leaves the Worker</b></a> ·
+  <a href="LICENSE"><b>MIT Licence</b></a>
+</p>
+
+<br>
+
+This Worker is the only part of [ConfirmPay](https://confirmpay.link) that ever holds the raw email, and it is small enough to read in one sitting: about 500 lines of TypeScript, no AI, no database.
 
 The rest of ConfirmPay (the website, the API and the database) is not published. [What is not here](#what-is-not-here) says where that line falls.
 
